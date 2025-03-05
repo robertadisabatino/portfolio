@@ -50,6 +50,7 @@ border-radius: 0;
 
 .second-box-custom {
 height: 50vh;
+
 }
 
 .second-row-custom {
@@ -66,10 +67,10 @@ h2 {
 
 .card {
     width:220px;
-    height: 45vh;
+    height: 400px;
     background-color: transparent;
     color: white;
-    border: 
+    
 }
 
 .card-img-size {
@@ -81,7 +82,6 @@ h2 {
     background-color: rgb(229, 9, 20);
     color: white;
     height: 40px;
-    
     border-radius: 0;
     
 }
@@ -102,4 +102,30 @@ a {
 
 .first-col-footer-custom {
     background-color: black;
+}
+
+.end-footer-custom {
+    background-color: black;
+    height: 100px;
+    
+}
+
+.carosello-custom {
+    height:650px;
+    background-color: black;
+}
+
+.img-carosello-custom {
+    height: 600px;
+
+    
+}
+
+
+
+@media  screen and (max-width:767px) {
+    .second-row-custom {
+        height:100vh;
+        background-color: rgb(255, 0, 0)
+    }
 }
