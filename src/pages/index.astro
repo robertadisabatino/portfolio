@@ -1,11 +1,79 @@
 ---
+
+import '../styles/global.css';
+
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+
 ---
 
 <Layout>
 	<Welcome />
+  <!-- Who am I? Section -->
+  <section class="flex justify-center py-8">
+    <h2 class="text-2xl font-semibold">Who am I?</h2>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="bg-gray-100 p-8">
+    <h2 class="text-lg text-center">Hello, World!</h2>
+    <p class="text-lg">
+
+      Motivated and determined to start a career as a Full-Stack Web Developer Junior, I bring a blend of technical skills, attention to detail, and customer-oriented mindset, enhanced by my experience as a Guest Experience Agent in a luxury hotel. My approach is driven by initiative and leadership abilities, which translate into a strong sense of responsibility and a constant pursuit of excellence.
+
+I am a curious individual with a positive attitude, who enjoys proposing ideas, planning strategically, and working collaboratively in a team. I am seeking a dynamic environment where I can actively contribute to the development of effective solutions, combining organization, precision, creativity, and passion for coding to achieve goals within deadlines.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="flex justify-center py-8">
+    <h3 class="text-xl font-semibold">Skills</h3>
+  </section>
+  <section class="flex justify-center space-x-4 py-4">
+    <div class="bg-blue-500 text-white p-4 rounded-md">
+      <h4>JavaScript</h4>
+    </div>
+    <div class="bg-green-500 text-white p-4 rounded-md">
+      <h4>React</h4>
+    </div>
+    <div class="bg-yellow-500 text-white p-4 rounded-md">
+      <h4>CSS</h4>
+    </div>
+    <!-- Add more skills here -->
+  </section>
+
+  <!-- Projects Section -->
+  <section class="py-8">
+    <h3 class="text-center text-xl font-semibold">My Projects</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-6">
+      <!-- Project 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-lg font-semibold">Project One</h4>
+        <p>Description of your project goes here.</p>
+      </div>
+      <!-- Project 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-lg font-semibold">Project Two</h4>
+        <p>Description of your project goes here.</p>
+      </div>
+      <!-- Project 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-lg font-semibold">Project Three</h4>
+        <p>Description of your project goes here.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-8 bg-gray-200">
+    <h3 class="text-center text-xl font-semibold">Contact</h3>
+    <p class="text-center">
+      If you'd like to collaborate or just say hi, feel free to reach out to me!
+    </p>
+    <div class="flex justify-center space-x-4 py-4">
+      <a href="mailto:your-email@example.com" class="bg-blue-500 text-white p-4 rounded-md">Email</a>
+      <!-- Add other contact options here, like LinkedIn, GitHub, etc. -->
+    </div>
+  </section>
 </Layout>
